@@ -24,26 +24,16 @@
         }, 500);
     });
 
-
-    $('.clients-carousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        autoplay: true,
-        autoplayHoverPause: true,
-        items: 1,
-        responsiveClass: true,
-        responsive: {
-            480: {
-                items: 1
-            }, // from zero to 480 screen width 4 items
-            768: {
-                items: 2
-            }, // from 480 screen widthto 768 6 items
-            1024: {
-                items: 5 // from 768 screen width to 1024 8 items
-            }
-        },
-    })
+    // PROJECT CAROUSEL
+    $('.owl-carousel').owlCarousel({
+    	items: 1,
+	    loop:true,
+	    margin:10,
+	    nav:true,
+        autoplay:true,
+        autoplayTimeout:2000,
+        autoplayHoverPause:true,
+	});
 
     var $hamburger = $(".hamburger");
     $hamburger.on("click", function (e) {

@@ -1464,6 +1464,10 @@ body .dark-mode {
 }
 
 @media (max-width: 640px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
     .stunning-header .stunning-header-content .stunning-header-title {
         font-size: 36px;
     }

@@ -5,6 +5,13 @@ $(function() {
         duration: 1000,
         easing: 'ease-out-back',
     })
+
+    $('#post-modal').modal('show');
+
+    setTimeout(function() {
+        $('#post-modal').modal('hide');
+    }, 5000);
+
 });
 
 

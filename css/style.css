@@ -91,13 +91,20 @@ strong {
 }
 
 
-/*NavbAR*/
+/*--------------------------------------------------------------
+# Logo
+--------------------------------------------------------------*/
 
 .logo {
     content: url("../asset/logo-dark.png");
     height: auto;
     width: 190px;
 }
+
+
+/*--------------------------------------------------------------
+# NavBAr
+--------------------------------------------------------------*/
 
 nav {
     background-color: white;
@@ -113,17 +120,6 @@ nav {
 .navbar ul li a:active {
     color: darkgoldenrod;
     font-weight: 700;
-}
-
-
-/*
-.navbar-toggler {
-    background-color: #FF7700;
-}
-*/
-
-.navbar-toggler {
-    border-color: #FF7700;
 }
 
 .dropdown:hover>.dropdown-menu {
@@ -215,7 +211,9 @@ nav {
 }
 
 
-/*NavBar Ends*/
+/*--------------------------------------------------------------
+# Hero Text
+--------------------------------------------------------------*/
 
 .about {
     padding-bottom: 20em;
@@ -283,7 +281,39 @@ nav {
 }
 
 
-/*------------- #STUNNING-HEADER --------------*/
+/*--------------------------------------------------------------
+# Hero Image
+--------------------------------------------------------------*/
+
+.home-image img {
+    margin: 20px;
+    position: absolute;
+    right: -70em;
+    width: 35em;
+    height: auto;
+    /*    background: blue;*/
+    -webkit-animation: slide 0.8s forwards;
+    -webkit-animation-delay: 1s;
+    animation: slide 0.8s forwards;
+    animation-delay: .6s;
+}
+
+@-webkit-keyframes slide {
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes slide {
+    100% {
+        right: 0;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Breadcrums
+--------------------------------------------------------------*/
 
 .stunning-header {
     padding: 125px 0;
@@ -368,33 +398,10 @@ nav {
     background-image: url("../asset/bg/pattern-bg-red.jpg");
 }
 
-.home-image img {
-    margin: 20px;
-    position: absolute;
-    right: -70em;
-    width: 35em;
-    height: auto;
-    /*    background: blue;*/
-    -webkit-animation: slide 0.8s forwards;
-    -webkit-animation-delay: 1s;
-    animation: slide 0.8s forwards;
-    animation-delay: .6s;
-}
 
-@-webkit-keyframes slide {
-    100% {
-        right: 0;
-    }
-}
-
-@keyframes slide {
-    100% {
-        right: 0;
-    }
-}
-
-
-/*Services*/
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
 
 .section-services {
     padding-top: 110px;
@@ -492,6 +499,11 @@ nav {
     color: #ff7700;
 }
 
+
+/*--------------------------------------------------------------
+# Clients Section
+--------------------------------------------------------------*/
+
 .project {
     background-color: #E8E8E8;
 }
@@ -560,6 +572,11 @@ nav {
 .owl-theme .owl-dots .owl-dot:hover span {
     background: #ff7700;
 }
+
+
+/*--------------------------------------------------------------
+# Our Partner
+--------------------------------------------------------------*/
 
 .our-partner {
     padding: 60px 0;
@@ -646,7 +663,9 @@ hr {
 }
 
 
-/*Contact Form*/
+/*--------------------------------------------------------------
+# Contact Form Floating
+--------------------------------------------------------------*/
 
 .contact_us {
     position: relative;
@@ -710,7 +729,9 @@ textarea {
 }
 
 
-/*Back to top*/
+/*--------------------------------------------------------------
+# Back To Top Button
+--------------------------------------------------------------*/
 
 #return-to-top {
     position: fixed;
@@ -758,7 +779,9 @@ textarea {
 }
 
 
-/*Footer*/
+/*--------------------------------------------------------------
+# Footer Section
+--------------------------------------------------------------*/
 
 .footer-area {
     background-color: #f7f7f7;
@@ -770,13 +793,6 @@ textarea {
 .footer-area .form-control {
     background-color: transparent;
 }
-
-
-/*
-.footer-area .single-footer-widget {
-    margin-bottom:
-}
-*/
 
 .footer-area .single-footer-widget p {
     font-size: 14px;
@@ -946,7 +962,7 @@ textarea {
 }
 
 
-/* Wrapper */
+/* Footer Social Media Icons */
 
 .icon-button {
     background-color: white;
@@ -1059,30 +1075,10 @@ textarea {
     -webkit-text-fill-color: transparent;
 }
 
-@media all and (max-width: 680px) {
-    .icon-button {
-        border-radius: 1.6rem;
-        font-size: 0.8rem;
-        height: 1.6rem;
-        line-height: 1.6rem;
-        width: 1.6rem;
-    }
-    .icon-button:hover span {
-        width: 1.6rem;
-        height: 1.6rem;
-        border-radius: 1.6rem;
-        margin: -0.8rem;
-    }
-    /* Icons */
-    .icon-button i {
-        height: 1.6rem;
-        line-height: 1.6rem;
-        width: 1.6rem;
-    }
-}
 
-
-/*Bottom Border*/
+/*--------------------------------------------------------------
+# Footer Gradient Line (Decoration)
+--------------------------------------------------------------*/
 
 #box {
     display: flex;
@@ -1125,20 +1121,31 @@ textarea {
 }
 
 
-/*Dark Mode*/
+/*--------------------------------------------------------------
+# Dark Mode Start (DM-*)
+--------------------------------------------------------------*/
 
 body .dark-mode {
     background: #151515;
 }
+
+
+/* DM-BG */
 
 .dark-mode .dot-bg {
     background-color: #151515;
     background-image: url("../asset/svg/d-dark.svg");
 }
 
+
+/* DM-LOGO */
+
 .dark-mode .logo {
     content: url("../asset/logo-light.png");
 }
+
+
+/* DM-NAVBAR */
 
 .dark-mode .navbar {
     background-color: #1F1B24;
@@ -1188,7 +1195,7 @@ body .dark-mode {
 }
 
 
-/*Services Dark*/
+/* DM-Services Dark */
 
 .dark-mode .section-services {
     background-color: #211f24;
@@ -1228,9 +1235,15 @@ body .dark-mode {
     color: #fff;
 }
 
+
+/* DM-Client Carousel */
+
 .dark-mode .project {
     background: #282828;
 }
+
+
+/* DM-Our Partner */
 
 .dark-mode .our-partner {
     background: #131A22;
@@ -1240,6 +1253,7 @@ body .dark-mode {
     color: #fff;
     width: 10vh;
     border: 1px solid;
+    margin-top: -2px;
 }
 
 .dark-mode .our-partner img {
@@ -1262,6 +1276,9 @@ body .dark-mode {
     content: url("../asset/clients/6.png");
 }
 
+
+/* DM-FAQ */
+
 .dark-mode .faq {
     background: #282828;
 }
@@ -1269,6 +1286,9 @@ body .dark-mode {
 .dark-mode .faq .faq-list a.collapsed {
     color: #fff;
 }
+
+
+/* DM-Contact Form */
 
 .dark-mode .contact-form {
     background-color: #24252a;
@@ -1278,6 +1298,9 @@ body .dark-mode {
     background-color: #24252a;
     box-shadow: 0px 1px 30px #e4e7ec;
 }
+
+
+/* DM-Contact */
 
 .dark-mode .footer-area {
     background-color: #151515;
@@ -1290,6 +1313,9 @@ body .dark-mode {
     background-color: #353535;
     box-shadow: 0px 0px 5px #e4e7ec;
 }
+
+
+/* DM-Return to top button */
 
 .dark-mode #return-to-top {
     background: #fff;
@@ -1307,14 +1333,44 @@ body .dark-mode {
     color: #fff;
 }
 
+
+/* DM-Scrollbar */
+
 .dark-mode::-webkit-scrollbar-track {
     background-color: #374151;
 }
 
-.darkmodde {}
+
+/*--------------------------------------------------------------
+    End Dark Mode
+--------------------------------------------------------------*/
 
 
-/*Rsponsive*/
+/*--------------------------------------------------------------
+#  Responsive
+--------------------------------------------------------------*/
+
+@media all and (max-width: 680px) {
+    .icon-button {
+        border-radius: 1.6rem;
+        font-size: 0.8rem;
+        height: 1.6rem;
+        line-height: 1.6rem;
+        width: 1.6rem;
+    }
+    .icon-button:hover span {
+        width: 1.6rem;
+        height: 1.6rem;
+        border-radius: 1.6rem;
+        margin: -0.8rem;
+    }
+    /* Icons */
+    .icon-button i {
+        height: 1.6rem;
+        line-height: 1.6rem;
+        width: 1.6rem;
+    }
+}
 
 @media (min-width: 1270px) {
     .mode-switch {

@@ -1433,11 +1433,6 @@ body .dark-mode {
 }
 
 @media (max-width: 767px) {
-    html,
-    body {
-        padding-top: 10px;
-        overflow-x: hidden;
-    }
     .mode-switch {
         margin-top: 10px;
     }

@@ -604,7 +604,6 @@ hr {
 .faq {
     background-color: #E8E8E8;
     padding-top: 90px;
-    ;
     padding-bottom: 200px;
     margin-bottom: -15em;
 }
@@ -726,56 +725,6 @@ textarea {
     box-shadow: 0px 1px 30px;
     background: #ff7700;
     border-radius: 20px;
-}
-
-
-/*--------------------------------------------------------------
-# Back To Top Button
---------------------------------------------------------------*/
-
-#return-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: rgba(0, 0, 0, 0.7);
-    width: 40px;
-    height: 40px;
-    display: block;
-    text-decoration: none;
-    -webkit-border-radius: 35px;
-    -moz-border-radius: 35px;
-    border-radius: 25px;
-    display: none;
-    -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    box-shadow: 0px 0px 0px 0.1em black;
-    z-index: 7;
-}
-
-#return-to-top i {
-    color: #fff;
-    margin: 0;
-    position: relative;
-    left: 11px;
-    top: 5px;
-    font-size: 30px;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
-
-#return-to-top:hover {
-    background: #ff7700;
-}
-
-#return-to-top:hover i {
-    color: #fff;
-    top: 1px;
 }
 
 
@@ -1077,6 +1026,56 @@ textarea {
 
 
 /*--------------------------------------------------------------
+# Back To Top Button
+--------------------------------------------------------------*/
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 25px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 0px 0.1em black;
+    z-index: 7;
+}
+
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 11px;
+    top: 5px;
+    font-size: 30px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+    background: #ff7700;
+}
+
+#return-to-top:hover i {
+    color: #fff;
+    top: 1px;
+}
+
+
+/*--------------------------------------------------------------
 # Footer Gradient Line (Decoration)
 --------------------------------------------------------------*/
 
@@ -1300,13 +1299,13 @@ body .dark-mode {
 }
 
 
-/* DM-Contact */
+/* DM-Footer */
 
 .dark-mode .footer-area {
     background-color: #151515;
     padding: 500px 0px 10px;
     z-index: 1;
-    margin-top: -355px
+    margin-top: -340px
 }
 
 .dark-mode .icon-button {

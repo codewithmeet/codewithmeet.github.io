@@ -684,8 +684,8 @@ hr {
 .faq {
     background-color: #E8E8E8;
     padding-top: 90px;
-    padding-bottom: 200px;
-    margin-bottom: -15em;
+    padding-bottom: 251PX;
+    margin-bottom: -42em;
 }
 
 .faq .faq-list {
@@ -749,8 +749,10 @@ hr {
 .contact_us {
     position: relative;
     z-index: 5;
-    margin-top: 20px;
     border-radius: 30px;
+    outline: none;
+    margin-top: 20em;
+    padding-top: 9em;
 }
 
 .contact-form {
@@ -1777,9 +1779,12 @@ body .dark-mode {
     .stunning-header .stunning-header-content .stunning-header-title {
         font-size: 30px;
     }
+    .contact_us {
+        padding-top: 7em;
+    }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 380px) {
     h1 {
         color: #212121;
         font-size: 1.8em;
@@ -1805,10 +1810,11 @@ body .dark-mode {
     .section-services {
         padding-top: 150px;
     }
+    .contact_us {
+        padding-top: 5em;
+    }
     .contact-form .submit-btn {
-        /*    width: 200px;*/
         height: auto;
-        /*    margin-left: 60px;*/
     }
     .footer-area .copyright_part_text p {
         font-size: 10px;

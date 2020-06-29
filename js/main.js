@@ -2,7 +2,7 @@ $(function() {
 
     // Pre-loader
     window.onload = function() {
-        $('#pre-loader').fadeOut(1000, function() {
+        $('#pre-loader').fadeOut('slow', function() {
             $('#pre-loader').remove();
         });
         $('body').delay(350).css({
@@ -25,13 +25,6 @@ $(function() {
     var easeInQuad = new SmoothScroll('[data-easing="easeInQuad"]', { easing: 'easeInQuad' });
 
 
-
-    // Modal 
-    $('#post-modal').modal('show');
-
-    setTimeout(function() {
-        $('#post-modal').modal('hide');
-    }, 3000);
 
 });
 

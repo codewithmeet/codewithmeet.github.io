@@ -42,12 +42,9 @@ let mouseX = -100;
 let mouseY = -100;
 let ringX = -100;
 let ringY = -100;
-
-
 let isOwlnav, isDarkmode, isLogo, btn_nws, isHover, isover, isalink, mouseDown, ctnbtn = false;
 let pointerclr = "black";
 
-let = false;
 
 const init_pointer = (options) => {
 
@@ -56,7 +53,9 @@ const init_pointer = (options) => {
 
             mouseX = mouse.clientX;
             mouseY = mouse.clientY;
-
+            document.body.style.cursor = "none";
+        } else {
+            document.body.style.cursor = "default";
         }
     };
 
@@ -258,7 +257,7 @@ const init_pointer = (options) => {
     $('#return-to-top').click(function() { // When arrow is clicked
         $('body,html').animate({
             scrollTop: 0 // Scroll to top of body
-        }, 500);
+        }, 1200);
     });
 
     // PROJECT CAROUSEL
